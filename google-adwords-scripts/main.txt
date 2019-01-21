@@ -1,0 +1,14 @@
+var CODE_DIVERS_API = 'https://s77a6xrvk7.execute-api.us-east-1.amazonaws.com/dev'
+
+function main() {
+  var keywords = searchQueryPerformanceReport();
+  var payload = { 
+    customerId: getCurrentAccount().getCustomerId(),
+    keywords: keywords
+  };
+  Logger.log(JSON.stringify(payload.keywords[0]));
+  Logger.log(payload.customerId);
+  return postToEndpoint('keywords',payload);
+}
+
+

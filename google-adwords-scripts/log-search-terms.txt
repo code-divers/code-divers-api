@@ -1,0 +1,106 @@
+function main() {
+  
+      var keywords = [];
+        var report = AdWordsApp.report(
+       "SELECT AccountDescriptiveName, AccountTimeZone, AdFormat, AdGroupId, AdGroupName, AdGroupStatus, AdNetworkType1, AdNetworkType2, " +
+       "AllConversionRate, AllConversionValue, AverageCost, AverageCpc, AverageCpe, AverageCpv, AveragePosition, CampaignName,"+
+       "Clicks, Impressions, Cost, Conversions, CampaignId, ConversionRate, ConversionValue, CostPerAllConversion, CostPerConversion,"+
+       "CrossDeviceConversions, Ctr, Date, DayOfWeek, DestinationUrl, Device," +
+       "EngagementRate, Engagements, ExternalCustomerId, FinalUrl, InteractionRate, Interactions, KeywordId, KeywordTextMatchingQuery,"+
+       "Month, MonthOfYear, Quarter, Query, QueryMatchTypeWithVariant, QueryTargetingStatus, TrackingUrlTemplate,"+
+       "ValuePerAllConversion, ValuePerConversion, VideoQuartile100Rate, VideoQuartile25Rate, VideoQuartile50Rate, VideoQuartile75Rate," +
+       "VideoViewRate, VideoViews, ViewThroughConversions, Week, Year" +
+       " FROM SEARCH_QUERY_PERFORMANCE_REPORT" +
+       " DURING LAST_MONTH");
+      var rows = report.rows();
+      while(rows.hasNext()) {
+        var keyword = {};
+        var row = rows.next();
+        keyword.query = row.Query;
+        keyword.keywordTextMatchingQuery = parseEmpty(row.KeywordTextMatchingQuery);
+        keyword.queryMatchTypeWithVariant = parseEmpty(row.QueryMatchTypeWithVariant);
+        keyword.queryTargetingStatus = parseEmpty(row.QueryTargetingStatus);
+        keyword.logDate = new Date(row.Date).getTime();
+        keyword.cost = parseFloat(row.Cost);
+        keyword.keywordId = parseInt(row.KeywordId);
+        keyword.finalUrl = parseEmpty(row.FinalUrl);
+        keyword.trackingUrlTemplate = parseEmpty(row.TrackingUrlTemplate);
+        keyword.externalCustomerId = parseInt(row.ExternalCustomerId);
+        keyword.destinationUrl = parseEmpty(row.DestinationUrl);
+        keyword.device = parseEmpty(row.Device);
+        keyword.time = {
+          dayOfWeek: parseEmpty(row.DayOfWeek),
+          week: new Date(row.Week).getTime(),
+          month: new Date(row.Month).getTime(),
+          monthOfYear: parseEmpty(row.MonthOfYear),
+          quarter: new Date(row.Quarter).getTime(),
+          year: parseEmpty(row.Year)
+        };
+        keyword.adgroup = {
+          id: parseInt(row.AdGroupId),
+          name: parseEmpty(row.AdGroupName),
+          status: parseEmpty(row.AdGroupStatus)
+        };
+        keyword.campaign = {
+          id: parseInt(row.CampaignId),
+          name: parseEmpty(row.CampaignName)
+        };
+        accountName: parseEmpty(row.AccountDescriptiveName);
+        keyword.account = {
+          name: parseEmpty(row.AccountDescriptiveName),
+          timezone: parseEmpty(row.AccountTimeZone)
+        };
+        keyword.ad = {
+          format: parseEmpty(row.AdFormat),
+          networkType: [parseEmpty(row.AdNetworkType1), parseEmpty(row.AdNetworkType2)]
+        };
+        keyword.statistics = {
+          clicks: parseInt(row.Clicks),
+          impressions: parseInt(row.Impressions),
+          ctr: parseEmpty(row.Ctr),
+          allConversionRate: parseEmpty(row.AllConversionRate),
+          allConversionValue: parseFloat(row.AllConversionValue),
+          averageCost: parseFloat(row.AverageCost),
+          averageCpc: parseFloat(row.AverageCpc),
+          averageCpe: parseFloat(row.AverageCpe),
+          averageCpv: parseFloat(row.AverageCpv),
+          averagePosition: parseFloat(row.AveragePosition),
+          conversionRate: parseEmpty(row.ConversionRate),
+          conversions: parseFloat(row.Conversions),
+          conversionValue: parseEmpty(row.ConversionValue),
+          costPerAllConversion: parseFloat(row.CostPerAllConversion),
+          costPerConversion: parseFloat(row.CostPerConversion),
+          crossDeviceConversions: parseEmpty(row.CrossDeviceConversions),
+          engagementRate: parseEmpty(row.EngagementRate),
+          engagements: parseInt(row.Engagements),
+          interactionRate: parseEmpty(row.InteractionRate),
+          interactions: parseInt(row.Interactions),
+          valuePerAllConversion: parseFloat(row.ValuePerAllConversion),
+          valuePerConversion: parseFloat(row.ValuePerConversion)
+        };
+        keyword.videoStatistics = {
+          quartile100Rate: parseEmpty(row.VideoQuartile100Rate),
+          quartile25Rate: parseEmpty(row.VideoQuartile25Rate),
+          quartile50Rate: parseEmpty(row.VideoQuartile50Rate),
+          quartile75Rate: parseEmpty(row.VideoQuartile75Rate),
+          viewRate: parseEmpty(row.VideoViewRate),
+          views: parseInt(row.VideoViews),
+          viewThroughConversions: parseInt(row.ViewThroughConversions)
+        };
+        
+        keywords.push(keyword);
+      }
+      var options = {
+       'method' : 'post',
+       'contentType': 'application/json',
+       'accept': 'application/json',
+       'payload' :  JSON.stringify(keywords)
+      };
+
+      var response = UrlFetchApp.fetch('https://s77a6xrvk7.execute-api.us-east-1.amazonaws.com/dev/keywords', options);
+      Logger.log(response);
+}
+
+function parseEmpty(value){
+  return value.length == 0 ? null : value;
+}

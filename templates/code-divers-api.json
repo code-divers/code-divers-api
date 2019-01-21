@@ -1,0 +1,721 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "94ed834d-737d-4e4d-89d9-b350ee1a1e63": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 230,
+                    "y": 300
+                },
+                "z": 0,
+                "embeds": []
+            },
+            "63be3aac-70f9-4824-82cf-0feb8e4b9ea4": {
+                "size": {
+                    "width": 180,
+                    "height": 160
+                },
+                "position": {
+                    "x": -10,
+                    "y": 310
+                },
+                "z": 0,
+                "embeds": []
+            },
+            "0b65be88-9e64-4acd-b43e-ed361a1eefb9": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 230,
+                    "y": 390
+                },
+                "z": 0,
+                "embeds": [],
+                "dependson": [
+                    "94ed834d-737d-4e4d-89d9-b350ee1a1e63"
+                ]
+            },
+            "e6452b2c-6314-4ada-879b-fee9cc626c65": {
+                "size": {
+                    "width": 170,
+                    "height": 130
+                },
+                "position": {
+                    "x": 10,
+                    "y": 500
+                },
+                "z": 0,
+                "embeds": [],
+                "dependson": [
+                    "63be3aac-70f9-4824-82cf-0feb8e4b9ea4"
+                ]
+            },
+            "a5bc6b85-945d-4cbf-af3f-231943f739d7": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -200,
+                    "y": 450
+                },
+                "z": 0,
+                "embeds": [],
+                "iscontainedinside": [
+                    "e6452b2c-6314-4ada-879b-fee9cc626c65"
+                ],
+                "dependson": [
+                    "44470949-b4b2-4b56-ad57-a8aaeac09166",
+                    "63be3aac-70f9-4824-82cf-0feb8e4b9ea4"
+                ]
+            },
+            "44470949-b4b2-4b56-ad57-a8aaeac09166": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -410,
+                    "y": 420
+                },
+                "z": 0,
+                "embeds": []
+            },
+            "a0ba3fd4-4a8a-4e8e-88aa-ebfc62e7481e": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -390,
+                    "y": 550
+                },
+                "z": 0,
+                "embeds": []
+            },
+            "11d75115-4e29-4d71-b474-a52470634111": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -610,
+                    "y": 400
+                },
+                "z": 0,
+                "embeds": [],
+                "isassociatedwith": [
+                    "44470949-b4b2-4b56-ad57-a8aaeac09166"
+                ]
+            },
+            "09bacfe4-02a0-4b26-a997-dc6d3dbae13e": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -210,
+                    "y": 300
+                },
+                "z": 0,
+                "embeds": [],
+                "iscontainedinside": [
+                    "e6452b2c-6314-4ada-879b-fee9cc626c65"
+                ],
+                "dependson": [
+                    "09bacfe4-02a0-4b26-a997-dc6d3dbae13e",
+                    "9db986b1-dbb5-4e65-80cb-213fc8b1b97e",
+                    "63be3aac-70f9-4824-82cf-0feb8e4b9ea4"
+                ]
+            },
+            "9db986b1-dbb5-4e65-80cb-213fc8b1b97e": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -570,
+                    "y": 240
+                },
+                "z": 0,
+                "embeds": []
+            },
+            "8298f56a-2bb5-49a5-9a4c-65b3816e9fa2": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -340,
+                    "y": 250
+                },
+                "z": 0,
+                "embeds": [],
+                "isassociatedwith": [
+                    "9db986b1-dbb5-4e65-80cb-213fc8b1b97e"
+                ]
+            },
+            "c63f332d-c485-4ff0-b262-62140ae47109": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 50,
+                    "y": 190
+                },
+                "z": 0,
+                "embeds": [],
+                "iscontainedinside": [
+                    "63be3aac-70f9-4824-82cf-0feb8e4b9ea4"
+                ],
+                "dependson": [
+                    "09bacfe4-02a0-4b26-a997-dc6d3dbae13e",
+                    "a5bc6b85-945d-4cbf-af3f-231943f739d7"
+                ]
+            },
+            "f0036d9c-56eb-4f73-9ba9-12223d06debb": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 230,
+                    "y": 480
+                },
+                "z": 0,
+                "embeds": []
+            }
+        }
+    },
+    "Parameters": {
+        "sourceBucketName": {
+            "Type": "String",
+            "Description": " The name for the bucket that include the project source code",
+            "AllowedPattern": "^([a-z]|(\\d(?!\\d{0,2}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})))([a-z\\d]|(\\.(?!(\\.|-)))|(-(?!\\.))){1,61}[a-z\\d\\.]$",
+            "Default": "code-divers-source",
+            "ConstraintDescription": "Should be an existing S3 Bucket Name"
+        },
+        "websiteBucketName": {
+            "Type": "String",
+            "Description": " The name for the bucket that include the project website",
+            "AllowedPattern": "^([a-z]|(\\d(?!\\d{0,2}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})))([a-z\\d]|(\\.(?!(\\.|-)))|(-(?!\\.))){1,61}[a-z\\d\\.]$",
+            "Default": "code-divers-website",
+            "ConstraintDescription": "Should be a Valid S3 Bucket Name"
+        }
+    },
+    "Resources": {
+        "websiteBucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "BucketName": {
+                    "Ref": "websiteBucketName"
+                },
+                "WebsiteConfiguration": {
+                    "IndexDocument": "index.html"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "94ed834d-737d-4e4d-89d9-b350ee1a1e63"
+                }
+            }
+        },
+        "apiGateway": {
+            "Type": "AWS::ApiGateway::RestApi",
+            "Properties": {
+                "Name": {
+                    "Ref": "AWS::StackName"
+                },
+                "Description": "API to access the api",
+                "EndpointConfiguration": {
+                    "Types": [
+                        "REGIONAL"
+                    ]
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "63be3aac-70f9-4824-82cf-0feb8e4b9ea4"
+                }
+            }
+        },
+        "websitePolicy": {
+            "Type": "AWS::S3::BucketPolicy",
+            "Properties": {
+                "Bucket": {
+                    "Ref": "websiteBucket"
+                },
+                "PolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": {
+                        "Effect": "Allow",
+                        "Principal": "*",
+                        "Action": "s3:GetObject",
+                        "Resource": {
+                            "Fn::Sub": "arn:aws:s3:::${websiteBucket}/*"
+                        }
+                    }
+                }
+            },
+            "DependsOn": "websiteBucket",
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "0b65be88-9e64-4acd-b43e-ed361a1eefb9"
+                }
+            }
+        },
+        "apiResourceKeywords": {
+            "Type": "AWS::ApiGateway::Resource",
+            "Properties": {
+                "ParentId": {
+                    "Fn::GetAtt": [
+                        "apiGateway",
+                        "RootResourceId"
+                    ]
+                },
+                "PathPart": "keywords",
+                "RestApiId": {
+                    "Ref": "apiGateway"
+                }
+            },
+            "DependsOn": "apiGateway",
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "e6452b2c-6314-4ada-879b-fee9cc626c65"
+                }
+            }
+        },
+        "apiResourceKeywordsGet": {
+            "Type": "AWS::ApiGateway::Method",
+            "Properties": {
+                "RestApiId": {
+                    "Ref": "apiGateway"
+                },
+                "ResourceId": {
+                    "Ref": "apiResourceKeywords"
+                },
+                "HttpMethod": "GET",
+                "AuthorizationType": "NONE",
+                "Integration": {
+                    "Type": "AWS",
+                    "Uri": {
+                        "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${lambdaGetGoogleKeywords.Arn}/invocations"
+                    },
+                    "IntegrationHttpMethod": "POST",
+                    "IntegrationResponses": [
+                        {
+                            "StatusCode": 200
+                        }
+                    ]
+                },
+                "MethodResponses": [
+                    {
+                        "StatusCode": 200,
+                        "ResponseModels": {
+                            "application/json": "Empty"
+                        }
+                    }
+                ]
+            },
+            "DependsOn": [
+                "lambdaGetGoogleKeywords",
+                "apiGateway"
+            ],
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "a5bc6b85-945d-4cbf-af3f-231943f739d7"
+                }
+            }
+        },
+        "apiResourceKeywordsLog": {
+            "Type": "AWS::ApiGateway::Method",
+            "Properties": {
+                "RestApiId": {
+                    "Ref": "apiGateway"
+                },
+                "ResourceId": {
+                    "Ref": "apiResourceKeywords"
+                },
+                "HttpMethod": "POST",
+                "AuthorizationType": "NONE",
+                "Integration": {
+                    "Type": "AWS",
+                    "Uri": {
+                        "Fn::Sub": "arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${lambdaLogGoogleSearchTerms.Arn}/invocations"
+                    },
+                    "IntegrationHttpMethod": "POST",
+                    "IntegrationResponses": [
+                        {
+                            "StatusCode": 200
+                        }
+                    ],
+                    "RequestTemplates": {
+                        "application/json": "$input.json('$')"
+                    }
+                },
+                "MethodResponses": [
+                    {
+                        "StatusCode": 200,
+                        "ResponseModels": {
+                            "application/json": "Empty"
+                        }
+                    }
+                ]
+            },
+            "DependsOn": [
+                "lambdaLogGoogleSearchTerms",
+                "apiGateway"
+            ],
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "09bacfe4-02a0-4b26-a997-dc6d3dbae13e"
+                }
+            }
+        },
+        "lambdaGetGoogleKeywords": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+                "Handler": "dist/lambda.getGoogleKeywords",
+                "Role": {
+                    "Fn::GetAtt": [
+                        "lambdaExecutionRole",
+                        "Arn"
+                    ]
+                },
+                "Code": {
+                    "S3Bucket": {
+                        "Ref": "sourceBucketName"
+                    },
+                    "S3Key": "code-divers-api.zip"
+                },
+                "Runtime": "nodejs8.10"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "44470949-b4b2-4b56-ad57-a8aaeac09166"
+                }
+            }
+        },
+        "lambdaLogGoogleSearchTerms": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+                "Handler": "dist/keywords.logSearchTerms",
+                "Role": {
+                    "Fn::GetAtt": [
+                        "lambdaExecutionRole",
+                        "Arn"
+                    ]
+                },
+                "Code": {
+                    "S3Bucket": {
+                        "Ref": "sourceBucketName"
+                    },
+                    "S3Key": "code-divers-api.zip"
+                },
+                "Runtime": "nodejs8.10"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "9db986b1-dbb5-4e65-80cb-213fc8b1b97e"
+                }
+            }
+        },
+        "lambdaExecutionRole": {
+            "Type": "AWS::IAM::Role",
+            "Properties": {
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Effect": "Allow",
+                            "Principal": {
+                                "Service": [
+                                    "lambda.amazonaws.com"
+                                ]
+                            },
+                            "Action": [
+                                "sts:AssumeRole"
+                            ]
+                        }
+                    ]
+                },
+                "Path": "/",
+                "Policies": [
+                    {
+                        "PolicyName": "root",
+                        "PolicyDocument": {
+                            "Version": "2012-10-17",
+                            "Statement": [
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "comprehend:DetectSentiment",
+                                        "xray:PutTraceSegments",
+                                        "logs:CreateLogStream",
+                                        "logs:PutLogEvents",
+                                        "dynamodb:DescribeTable",
+                                        "dynamodb:GetItem",
+                                        "dynamodb:BatchGetItem",
+                                        "dynamodb:BatchWriteItem",
+                                        "dynamodb:PutItem",
+                                        "dynamodb:Scan",
+                                        "dynamodb:UpdateItem",
+                                        "dynamodb:CreateTable",
+                                        "dynamodb:UpdateTable",
+                                        "dynamodb:GetRecords",
+                                        "dynamodb:ListTables",
+                                        "dynamodb:DeleteItem",
+                                        "dynamodb:Query",
+                                        "dynamodb:DescribeStream",
+                                        "dynamodb:CreateGlobalTable",
+                                        "dynamodb:ListStreams",
+                                        "dynamodb:ListGlobalTables",
+                                        "dynamodb:DescribeGlobalTable",
+                                        "s3:HeadBucket",
+                                        "s3:DeleteObject",
+                                        "s3:GetBucketWebsite",
+                                        "s3:PutObject",
+                                        "s3:GetObject",
+                                        "s3:ListBucket",
+                                        "s3:DeleteBucket",
+                                        "s3:PutBucketWebsite",
+                                        "s3:ListAllMyBuckets",
+                                        "sagemaker:InvokeEndpoint"
+                                    ],
+                                    "Resource": "*"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "a0ba3fd4-4a8a-4e8e-88aa-ebfc62e7481e"
+                }
+            }
+        },
+        "lambdaGetGoogleKeywordsPremission": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+                "Action": "lambda:invokeFunction",
+                "FunctionName": {
+                    "Fn::GetAtt": [
+                        "lambdaGetGoogleKeywords",
+                        "Arn"
+                    ]
+                },
+                "Principal": "apigateway.amazonaws.com",
+                "SourceArn": {
+                    "Fn::Join": [
+                        "",
+                        [
+                            "arn:aws:execute-api:",
+                            {
+                                "Ref": "AWS::Region"
+                            },
+                            ":",
+                            {
+                                "Ref": "AWS::AccountId"
+                            },
+                            ":",
+                            {
+                                "Ref": "apiGateway"
+                            },
+                            "/*"
+                        ]
+                    ]
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "11d75115-4e29-4d71-b474-a52470634111"
+                }
+            }
+        },
+        "lambdaLogGoogleSearchtermsPremission": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+                "Action": "lambda:invokeFunction",
+                "FunctionName": {
+                    "Fn::GetAtt": [
+                        "lambdaLogGoogleSearchTerms",
+                        "Arn"
+                    ]
+                },
+                "Principal": "apigateway.amazonaws.com",
+                "SourceArn": {
+                    "Fn::Join": [
+                        "",
+                        [
+                            "arn:aws:execute-api:",
+                            {
+                                "Ref": "AWS::Region"
+                            },
+                            ":",
+                            {
+                                "Ref": "AWS::AccountId"
+                            },
+                            ":",
+                            {
+                                "Ref": "apiGateway"
+                            },
+                            "/*"
+                        ]
+                    ]
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "8298f56a-2bb5-49a5-9a4c-65b3816e9fa2"
+                }
+            }
+        },
+        "apiGatewayDeployment": {
+            "Type": "AWS::ApiGateway::Deployment",
+            "DependsOn": [
+                "apiResourceKeywordsLog",
+                "apiResourceKeywordsGet"
+            ],
+            "Properties": {
+                "RestApiId": {
+                    "Ref": "apiGateway"
+                },
+                "StageName": "dev",
+                "StageDescription": {
+                    "LoggingLevel": "INFO",
+                    "MetricsEnabled": "true"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "c63f332d-c485-4ff0-b262-62140ae47109"
+                }
+            }
+        },
+        "googleSearchTermsTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "query",
+                        "AttributeType": "S"
+                    },
+                    {
+                        "AttributeName": "logDate",
+                        "AttributeType": "N"
+                    },
+                    {
+                        "AttributeName": "customerId",
+                        "AttributeType": "S"
+                    },
+                    {
+                        "AttributeName": "campaignId",
+                        "AttributeType": "N"
+                    },
+                    {
+                        "AttributeName": "adgroupId",
+                        "AttributeType": "N"
+                    }
+                ],
+                "KeySchema": [
+                    {
+                        "AttributeName": "query",
+                        "KeyType": "HASH"
+                    },
+                    {
+                        "AttributeName": "logDate",
+                        "KeyType": "RANGE"
+                    }
+                ],
+                "ProvisionedThroughput": {
+                    "ReadCapacityUnits": "5",
+                    "WriteCapacityUnits": "5"
+                },
+                "TableName": "googleSearchTerms",
+                "GlobalSecondaryIndexes": [
+                    {
+                        "IndexName": "campaignId-logDate-index",
+                        "KeySchema": [
+                            {
+                                "AttributeName": "campaignId",
+                                "KeyType": "HASH"
+                            },
+                            {
+                                "AttributeName": "logDate",
+                                "KeyType": "RANGE"
+                            }
+                        ],
+                        "Projection": {
+                            "ProjectionType": "ALL"
+                        },
+                        "ProvisionedThroughput": {
+                            "ReadCapacityUnits": "5",
+                            "WriteCapacityUnits": "5"
+                        }
+                    },
+                    {
+                        "IndexName": "adgroupId-logDate-index",
+                        "KeySchema": [
+                            {
+                                "AttributeName": "adgroupId",
+                                "KeyType": "HASH"
+                            },
+                            {
+                                "AttributeName": "logDate",
+                                "KeyType": "RANGE"
+                            }
+                        ],
+                        "Projection": {
+                            "ProjectionType": "ALL"
+                        },
+                        "ProvisionedThroughput": {
+                            "ReadCapacityUnits": "5",
+                            "WriteCapacityUnits": "5"
+                        }
+                    },
+                    {
+                        "IndexName": "customerId-logDate-index",
+                        "KeySchema": [
+                            {
+                                "AttributeName": "customerId",
+                                "KeyType": "HASH"
+                            },
+                            {
+                                "AttributeName": "logDate",
+                                "KeyType": "RANGE"
+                            }
+                        ],
+                        "Projection": {
+                            "ProjectionType": "ALL"
+                        },
+                        "ProvisionedThroughput": {
+                            "ReadCapacityUnits": "5",
+                            "WriteCapacityUnits": "5"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "f0036d9c-56eb-4f73-9ba9-12223d06debb"
+                }
+            }
+        }
+    },
+    "Outputs": {
+        "gatewayEndpoint": {
+            "Description": "Rest API endpoints for the gateway",
+            "Value": {
+                "Fn::Sub": "https://${apiGateway}.execute-api.${AWS::Region}.amazonaws.com/dev"
+            }
+        }
+    }
+}
